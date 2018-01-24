@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#multiple-upload {
+	border: #DDD solid 1px;
+}
+
+div#multiple-upload div.container {
+	margin: 10px 0 10PX 0;
+	padding: 0;
+	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
+	position: relative;
+	border: #DDD solid 1px;
+}
+
+div#multiple-upload div.body {
+	width: 100%;
+	min-height: 250px;
+	display: block;
+	overflow: hidden;
+	/*border: #F00 solid 1px;*/
+}
+
+div#multiple-upload div.footer {
+	padding: 4px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	border-top: #DDD solid 1px;
+	background-color: #F7F7F7;
+	/*border: #F00 solid 1px;*/
+}
+
+div#multiple-upload ul {
+	margin: 0;
+	padding: 0 0 10px 0;
+	min-height: 200px;
+	overflow: hidden;
+}
+
+div#multiple-upload ul li{
+	margin:10px 0 0 10px;
+	width: 250px;
+	height: 225px;
+	float: left;
+	position: relative;
+	overflow:hidden;
+	border:#DDD solid 1px;
+	border-radius: 4px;
+}
+
+div#multiple-upload ul li p.delete{
+	margin-top: 80px;
+	text-align: center;
+	width: 100%;  
+}
+
+div#multiple-upload ul li div.image-preview {
+	text-align: center;
+	width: 100%;
+	height: 180px;
+	display: block;
+}
+
+div#multiple-upload ul li div.image-preview:hover {
+}
+
+div#multiple-upload ul li div.image-preview img {
+	height: 100%;
+	position: relative;
+	transition: all 0.2s linear;
+}
+
+div#multiple-upload ul li div.image-preview:hover img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+div#multiple-upload ul li div.image-preview div.mask {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	-webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 0.2s linear;
+}
+
+div#multiple-upload ul li div.image-preview:hover div.mask {
+	opacity: 1;
+}
+
+div#multiple-upload ul li div.image-preview p{
+	padding: 0 10px;
+	color: #fff;
+	line-height: 22px;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+	position: absolute;
+	top: 180px;
+	transition: all 0.2s linear;
+}
+
+div#multiple-upload ul li div.image-preview:hover p {
+	top: 10px;
+}
+
+div#multiple-upload ul li div.image-preview div.tools{
+	padding: 5px;
+	display: block;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.35);
+	width: 100%;
+	position: absolute;
+	top: -30px;
+	transition: all 0.2s linear;
+}
+
+div#multiple-upload ul li div.image-preview:hover div.tools{
+	top: 150px;
+}
+
+div#multiple-upload ul li div.image-preview div.mask div.tools a{
+	font-size: 16px;
+	color: #FFF;
+	text-decoration: none;
+	display: inline;
+}
+
+div#multiple-upload ul li div.image-preview div.mask div.tools a:nth-child(2){
+	margin-left: 15px;
+}
+
+div#multiple-upload ul li .input-file,  div#multiple-upload ul li .input-text{
+	padding: 4px;
+	background: #f7f7f7;
+	border-top: #DDD solid 1px;
+	width: 100%;
+	position: absolute;
+	top: 180px;
+}
+
+div#multiple-upload ul li div.inputFileButton {
+	background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+div#multiple-upload ul li div.inputFileButton span{
+	display: inherit;
+}
+
+div#multiple-upload ul li div.inputFileButton span:nth-child(2){
+	margin-left: 8px;
+}
+
+div#multiple-upload ul li div.inputFileButton input[type='file']{
+	cursor: pointer;
+    font-size: 20px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
